@@ -1,0 +1,58 @@
+@import '../../styles/global-variables.scss';
+
+.HamburgerIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: none;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  
+  &__ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 50px;
+    height: 50px;
+    
+    .line {
+      fill:none;
+      transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+      stroke: $black;
+      stroke-width: 4;
+      stroke-linecap:round;
+    }
+
+    .top {
+      stroke-dasharray: 40 121;
+    }
+
+    .bottom {
+      stroke-dasharray: 40 121;
+    }
+    
+    &.active {
+
+      .line {
+        stroke: var(--primary-colour);
+      }
+
+      &.rotate {
+        transform: rotate(45deg);
+      }
+
+      .top {
+        stroke-dashoffset: -68px;
+      }
+      
+      .bottom {
+        stroke-dashoffset: -68px;
+      }
+    }
+  }
+}

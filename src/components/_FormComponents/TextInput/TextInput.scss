@@ -1,0 +1,42 @@
+@import '../../../styles/global-variables.scss';
+
+.text-input {
+  .form-label {
+    font-size: 0.79rem;
+    color: var(--text-colour-light);
+    margin: 0 0 var(--spacing-xs);
+  }
+}
+
+.form-control, input[type="text"], input[type="email"], input[type="number"], input[type="textarea"] {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-md);
+  padding: 15px var(--spacing-md);
+  width: 100%;
+  transition: border .3s ease-in-out;
+  color: var(--text-colour);
+  outline: none;
+  box-shadow: none;
+  
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover, 
+  &:-webkit-autofill:focus, 
+  &:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--text-colour) !important;
+  }
+  
+  &.active, &:hover {
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    border-color: var(--border-active);
+  }
+
+  &::placeholder {
+    color: var(--placeholder-text);
+  }
+}

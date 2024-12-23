@@ -1,0 +1,135 @@
+@import '../../../styles/global-variables.scss';
+@import '../../../styles/animations.scss';
+
+.homepage-banner {
+  position: relative;
+  // background-color: $darkBg;
+  height: 100vh;
+  // max-height: 737px;
+  font-size: calc(10px + 2vmin);
+  // color: $white;
+  z-index: 2;
+
+  &::before {
+    content: '';
+    background: radial-gradient(circle, var(--primary-colour-10), transparent 80%);
+    z-index: 1;
+    position: absolute;
+    right: -15vw;
+    bottom: 0;
+    width: 30vw;
+    height: 30vw;
+  }
+
+  &::after {
+    content: '';
+    background: radial-gradient(circle, var(--secondary-colour-10), transparent 80%);
+    z-index: 1;
+    position: absolute;
+    right: -15vw;
+    bottom: 0;
+    width: 30vw;
+    height: 30vw;
+  }
+
+  @media all and (max-width: 1440px) {
+    .homepage-banner__content-left, .homepage-banner__hero-image {
+      width: calc(50% - 50px);
+    }
+
+    .homepage-banner__hero-title {
+      font-size: 3.052rem;
+    }
+  }
+
+  @media all and (max-width: (900px + $lg)) {
+    .homepage-banner__content {
+      padding: 0 $md;
+      max-width: 100%;
+      width: 100%;
+      justify-content: flex-start;
+
+      &-left {
+        width: 690px;
+
+        // .homepage-banner__hero-title {
+        //   font-size: 2.441rem;
+        // }
+      }
+
+      .homepage-banner__hero-image {
+        display: none;
+      }
+    }
+  }
+
+  &__highlight {
+    color: var(--primary-colour);
+    overflow: hidden;
+    // margin-right: $sm;
+  }
+  
+  &__hero-title {
+    display: inline-block;
+    font-weight: 700;
+  }
+
+  &__hero-image {
+    width: calc(45% - 50px);
+    // margin-right: -100px;
+  }
+  
+  &__content {
+    position: relative;
+    z-index: 99;
+    padding: 89px 0 0;
+    height: 100%;
+    gap: 100px;
+    
+    p {
+      font-weight: 300;
+      max-width: 700px;
+    }
+
+    &-left {
+      width: calc(55% - 50px);
+    }
+  }
+
+  &__cta {
+    margin: $lg 0 0;
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: $sm;
+    z-index: 99;
+    animation: fade_scroll 1.5s ease-in-out 0s infinite;
+
+    @media all and (max-width: (640px + $lg)) {
+      bottom: $lg;
+    }
+  }
+  
+  .highlight-enter {
+    transform: translateY(-50%);
+    // opacity: 0;
+  }
+  
+  .highlight-enter-active {
+    transform: translateY(0);
+    // opacity: 1;
+    transition: opacity 200ms linear, transform 400ms linear;
+  }
+  
+  .highlight-exit {
+    transform: translateY(0);
+    // opacity: 1;
+  }
+  
+  .highlight-exit-active {
+    transform: translateY(50%);
+    // opacity: 0;
+    transition: opacity 200ms linear, transform 400ms linear;
+  }
+}

@@ -1,0 +1,20 @@
+@import '../../styles/global-variables.scss';
+.welcome-container{
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center ;
+}
+.welcome-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+   gap: 30px;
+    background-color: #ffff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}

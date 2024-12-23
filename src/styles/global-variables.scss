@@ -1,0 +1,73 @@
+
+// Common
+$white: #fff;
+$grey03: #F8F8F8;
+$grey06: #F1F1F1;
+$grey10: #E8E8E8;
+$grey20: #D1D1D2;
+$grey30: #BABABB;
+$grey40: #A3A3A5;
+$grey50: #8B8C8E;
+$grey60: #747577;
+$grey70: #5D5E61;
+$grey80: #46474A;
+$grey90: #2F3034;
+$grey95: #242528;
+$grey100: #18191D;
+$black: #000;
+
+// Light styles
+$lightBg: $grey03;
+$textColour: $grey100;
+$lightTextColour: $grey60;
+$placeholderText: $grey50;
+$primaryColour: #8f87df;
+$primaryColourHover: #ebbc01;
+$secondaryColour: #4268FF;
+$secondaryColour10: #ecf0ff;
+$secondaryColour20: #d9e1ff;
+$secondaryColour30: #c6d2ff;
+$secondaryColour110: #3b5ee6;
+$secondaryColour170: #141f4c;
+$secondaryColour180: #0d1533;
+$secondaryColour190: #070a19;
+$success: #2BB673;
+$success-bg: rgba(43, 182, 115, 0.1);
+$error: #ff2200;
+$error-bg: rgba(255, 34, 0, 0.1);
+$border: $grey20;
+$borderLight: $grey10;
+$borderHeavy: $grey40;
+$borderActive: $grey100;
+$disabledText: $grey50;
+$disabledBg: $grey20;
+
+// Dark styles
+$darkBg: #232323;
+$darkBgOff: #2F2F2F;
+$darkBgHighlight: #393939;
+$darkTextColor: #FEFDF5;
+
+// font sizes
+$baseFont: 1rem;
+$textSmall: 0.8rem;
+$textLarge: 1.15rem;
+
+// border radius
+$borderRadius: 5px;
+$borderRadiusMd: 10px;
+$borderRadiusLg: 20px;
+$borderRadiusRound: 100px;
+
+// spacing
+$xs: 5px;
+$sm: 10px;
+$md: 20px;
+$lg: 40px;
+$xl: 80px;
+$xxl: 120px;
+$xxxl: 160px;
+
+// transitions
+$transitionTime: .3s; 
+$transitionType: ease-in-out;

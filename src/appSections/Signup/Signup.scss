@@ -1,0 +1,54 @@
+@import url('../../styles/global-variables.scss');
+
+.signup-page {
+
+  &__content-left {
+    position: relative;
+    width: 30vw;
+    background-image: url('../../assets/images/signup-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:after {
+      content: '';
+      background-color: rgba(#0d1533, 0.75);
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      backdrop-filter: blur(2px);
+    }
+  }
+
+  &__logo {
+    z-index: 2;
+    display: block;
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+  
+  &__content-right {
+    position: relative;
+    width: 70vw;
+    box-shadow: var(--box-shadow);
+  }
+
+  &__form {
+    background: var(--background);
+    box-shadow: var(--box-shadow);
+    border-radius: 16px;
+    padding: 40px;
+    overflow: hidden;
+  }
+
+  &__login {
+    position: absolute;
+    bottom: var(--spacing-lg);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}

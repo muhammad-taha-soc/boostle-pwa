@@ -1,0 +1,181 @@
+@import './global-variables.scss';
+.sidebar {
+
+
+  width: 65px; /* Collapsed width */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 20px 0; /* Adjusted padding to center icons better */
+  transition: width 0.9s ease; /* Smooth transition for expanding */
+  // position: fixed;
+  position: sticky;  /* Make the sidebar sticky */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full viewport height */
+  z-index: 1000; /* Ensure it's on top of other content */
+  background-color: #5e17EB;
+
+    &:hover {
+
+      width: 220px; 
+      // clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%); 
+      background-color: #5e17EB;
+  
+    
+    }
+
+  &__header {
+    margin-bottom: 10px;
+    padding: 20px; /* To align with icons when collapsed */
+    opacity: 0; /* Hide the company name text initially */
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover .sidebar__header {
+    opacity: 1; /* Show company name when sidebar is expanded */
+  
+  }
+
+  &__company-name {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    white-space: nowrap;
+    
+    overflow: hidden;
+  }
+
+  .sidebar__dropdown-icon {
+   
+    width: 20px;
+    height: 20px;
+    fill: #666;
+  }
+
+  &__section-header {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #666;
+    padding: 5px 20px;
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+    opacity: 0; /* Hide section header text initially */
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover .sidebar__section-header {
+    opacity: 1; /* Show section header when sidebar is expanded */
+  }
+
+  &__menu-items {
+    display: flex;
+    flex-direction: column;
+ 
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 70px 0;
+   background-color: #5e17EB;
+    margin: auto 0;
+    
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+
+  }
+
+  &__menu-item {
+    width: 100%;
+    margin-bottom: 16px;
+
+
+
+
+    
+
+    .sidebar__menu-link {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      overflow: hidden;
+
+      svg {
+        color: white;
+        margin-right: 10px;
+       
+        border-radius: 5px;
+        
+        flex-shrink: 0; /* Ensure icon doesn't resize */
+      }
+      &.active {
+        background-color: white; /* Light transparent background */
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        margin-left: 5px;
+        /* White border to indicate active */
+        
+        position: relative;
+
+        svg {
+          color: #6750A4;
+          
+        }
+
+        .sidebar__menu-text {
+          opacity: 1; 
+          color: #6750A4;/* Ensure text is visible when active */
+        }
+      }
+      .sidebar__menu-text {
+        font-size: 1rem;
+        color:#fff;
+        opacity: 0; /* Hide text initially */
+        white-space: nowrap; /* Prevent text from wrapping */
+        transition: opacity 0.3s ease;
+      }
+    }
+
+    &:hover .sidebar__menu-link {
+
+    }
+
+    // &:hover .sidebar__menu-text {
+    //   opacity: 1; /* Show text when hovering over the specific menu item */
+    // }
+  }
+  &:hover .sidebar__menu-text {
+      opacity: 1;
+      color: white; /* Show text when hovering over the specific menu item */
+   }
+
+  &__lower-menu-items {
+    display: flex;
+    flex-direction: column;
+     margin-top: auto; /* Pushes the lower menu items (Settings) to the bottom */
+  }
+  .sidebar__menu-link.disabled-link {
+    opacity: 0.5; // Grey out the link
+    pointer-events: none; // Disable clicking
+    position: relative;
+  }
+  
+  .sidebar__lock-icon {
+    position: absolute;
+    right: 10px; // Position the lock icon to the right
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc; // Light grey color for the lock icon
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../../styles/global-variables.scss';
+
+.select-input { 
+  &__field {
+    position: relative;
+    color: var(--text-colour);
+    border: 1px solid var(--border-light);
+    border-radius: var(--border-radius-md);
+
+    &.default-option {
+      color: var(--placeholder-text);
+      
+      option {
+        color: var(--placeholder-text);
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: var(--spacing-md);
+    transform: translateY(-50%);
+  }
+}

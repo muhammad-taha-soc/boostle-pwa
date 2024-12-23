@@ -1,0 +1,128 @@
+@import '../../../styles/global-variables.scss';
+
+.search-input {
+  position: relative;
+  // box-shadow: 0 2px 16px rgba(0,0,0,.1);
+ 
+  overflow: hidden;
+  margin: 0;
+      
+  &.lg {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-lg);
+
+    .search-input__input-wrap {
+      border-radius: var(--border-radius-lg);
+
+      .search-input__input {
+        padding: 26px var(--spacing-xl) 26px var(--spacing-md);
+      }
+
+      .search-input__submit {
+        border-radius: var(--border-radius-lg);
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  
+  &__input-wrap {
+    background: var(--background);
+    border: 1px solid $primaryColour;
+    border-radius: var(--border-radius-md);
+    background-color: var(--background);
+    transition: border var(--transition-time-short) var(--transition-ease);
+
+    .search-input__submit {
+      position: absolute;
+     right: 3px;
+     bottom: 3px;
+     top: 3px;
+     
+     
+      border-radius: var(--border-radius);
+      color: #87df;
+    }
+    .icon-space {
+      margin-left: 8px; // Adjust the space as needed
+    }
+    &:hover, &:focus {
+      cursor: pointer;
+      border-color: var(--border-active);
+  
+      .search-input__input {
+        color: var(--text-colour);
+      }
+
+      .search-input__submit {
+        .icon {
+          background-color: var(--border-active);
+        }
+      }
+    }
+  }
+  
+  &__input, input[type="search"] {
+    height: auto;
+    padding: 15px var(--spacing-xl) 15px var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--text-colour);
+    margin: 0;
+    flex: 1;
+
+    &::placeholder {
+      color: var(--text-colour);
+    }
+
+    &:focus {
+      color: var(--text-colour);
+      border-color: var(--text-colour);
+      box-shadow: none;
+      background-color: (--background-highlight);
+
+      &.is-invalid {
+        box-shadow: none;
+      }
+    }
+
+    &.is-invalid {
+      border-color: var(--error);
+      background-image: none;
+
+      &:focus, &:hover {
+        
+        border-color: var(--error);
+      }
+    }
+  }
+
+  &--invalid {
+    background-color: var(--error);
+    color: var(--error);
+    border-color: var(--error);
+
+    &::placeholder {
+      color: var(--error);
+    }
+  }
+
+  &:disabled {
+    color: var(--disabled-text);
+    border-color: var(--disabled-text);
+    background-color: var(--disabled-bg);
+
+    &::placeholder {
+      color: var(--placeholder-text);
+    }
+  }
+}
+
+
+
+

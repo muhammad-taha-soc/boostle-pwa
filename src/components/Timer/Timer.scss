@@ -1,0 +1,68 @@
+@import '../../styles/global-variables.scss';
+
+.Timer {
+  padding: $lg 0 $md;
+  margin-bottom: $lg;
+  width: 100%;
+
+  @media all and (max-width: (900px + $lg)) {
+    width: 100%;
+  }
+
+  @media all and (max-width: (600px + $lg)) {
+    flex-direction: column;
+  }
+
+  &__block {
+    background-color: $darkBgHighlight;
+    padding: $md;
+    border-radius: 8px;
+    min-width: 120px;
+    width: 100%;
+
+    @media all and (max-width: (900px + $lg)) {
+      width: 100%;
+      min-width: auto;
+    }
+
+    @media all and (max-width: (600px + $lg)) {
+      flex-direction: row !important;
+      justify-content: center;
+      align-items: baseline !important;
+
+      h1 {
+        margin: 0 $sm 0 0;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: $md;
+
+      @media all and (max-width: (600px + $lg)) {
+        margin: 0 0 $md;
+      }
+    }
+  }
+
+  &__unit {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+  }
+
+  &__days {
+
+  }
+
+  &__hours {
+
+  }
+
+  &__minutes {
+
+  }
+
+  &__seconds {
+
+  }
+}

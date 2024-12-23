@@ -1,0 +1,207 @@
+{
+    "_id": {
+      "$oid": "6729f7ff4603e6ea1da69668"
+    },
+    "name": "Smart: Innovation Funding",
+    "sector": [
+      "Micro, Small and Medium-sized Enterprises (SMEs)"
+    ],
+    "description": "The Smart programme is designed to support brand new and high impact innovations from micro, small and medium-sized enterprises (SMEs), and their collaboration partners where appropriate, with the aim of accelerating their innovation journey and creating unique opportunities.",
+    "min_award_amount": null,
+    "max_award_amount": 25000000,
+    "total_award_amount": 25000000,
+    "location": [
+      "United Kingdom"
+    ],
+    "applicant_type": [
+      "Micro, Small and Medium-sized Enterprises (SMEs)"
+    ],
+    "funder": "Innovate UK",
+    "valid_from": null,
+    "valid_to": "2024-01-24",
+    "additional_data": {
+      "eligibility_criteria": [
+        "The project must demonstrate a ground breaking and innovative idea for brand new products, processes or services",
+        "The idea must be significantly different from already available products, processes or services globally",
+        "The idea must be set for rapid commercialisation following project completion",
+        "Clear potential to positively impact the UK's position, productivity and competitiveness within the global economy",
+        "Clear, evidence based business plan to deliver significant economic impact, return on investment (ROI) and growth through commercialisation, as soon as possible after project completion",
+        "Why Smart funding is the right potential funding for your project, and the journey you have already been on to reach the point of application",
+        "A team with the necessary skills and expertise to deliver the project successfully and on time, and to achieve rapid commercialisation",
+        "Awareness of all the main risks the project will face with realistic management, mitigation and impact minimisation plans for each risk",
+        "Sound, practical financial plans and timelines that represent good value for money, including the funding of post project activities"
+      ],
+      "application_process": [
+        "Before submitting, it is the lead applicant's responsibility to make sure: that all the information provided in the application is correct",
+        "Your proposal meets the eligibility and scope criteria",
+        "All sections of the application are marked as complete",
+        "If collaborative, that all partners have completed all assigned sections and accepted the terms and conditions (T&amp;Cs)",
+        "You can reopen your application once submitted, up until the competition deadline",
+        "You must resubmit the application before the competition deadline"
+      ],
+      "funding_details": [
+        "Funding will be in the form of a grant",
+        "The balance between your total eligible project costs and the amount of grant awarded must be funded by the organisation receiving the grant",
+        "For feasibility studies and industrial research projects, you can get funding for your eligible project costs of: up to 70% if you are a micro or small organisation, up to 60% if you are a medium sized organisation, up to 50% if you are a large organisation",
+        "For experimental development projects which are nearer to market, you can get funding for your eligible project costs of: up to 45% if you are a micro or small organisation, up to 35% if you are a medium sized organisation, up to 25% if you are a large organisation"
+      ],
+      "unique_features": [
+        "The Smart programme is designed to support brand new and high impact innovations from micro, small and medium-sized enterprises (SMEs), and their collaboration partners where appropriate",
+        "The programme aims to accelerate the innovation journey and create unique opportunities",
+        "The grant offers funding where other opportunities are not available or appropriate, and where timing is key to ensure swift and successful commercialisation post project completion"
+      ],
+      "key_dates": {
+        "Competition opens": "25 July 2024",
+        "Competition closes": "24 January 2025",
+        "Applicants notified": "Before you start"
+      },
+      "contact_information": {
+        "Email": "support@iuk.ukri.org",
+        "Phone": "0300 321 4357"
+      },
+      "grant_purpose": [
+        "To support brand new and high impact innovations from micro, small and medium-sized enterprises (SMEs), and their collaboration partners where appropriate",
+        "To accelerate the innovation journey and create unique opportunities",
+        "To provide funding where other opportunities are not available or appropriate, and where timing is key to ensure swift and successful commercialisation post project completion"
+      ],
+      "how_to_apply": [
+        "Download the application form",
+        "Make sure all the information provided in the application is correct",
+        "Your proposal meets the eligibility and scope criteria",
+        "All sections of the application are marked as complete",
+        "If collaborative, that all partners have completed all assigned sections and accepted the terms and conditions (T&amp;Cs)",
+        "You can reopen your application once submitted, up until the competition deadline",
+        "You must resubmit the application before the competition deadline"
+      ],
+      "who_can_apply": [
+        "Micro, Small and Medium-sized Enterprises (SMEs)",
+        "Their collaboration partners where appropriate"
+      ],
+      "who_cannot_apply": [
+        "Projects that do not meet the competition scope or eligibility criteria",
+        "Projects where the technology is already available",
+        "Projects that do not address the size, potential and access to market for their innovation",
+        "Projects that do not evidence the potential for their idea to lead to significant return on investment (ROI), positive economic impact, growth and scale up of the business",
+        "Projects that do not provide clear and realistic plans to commercialise their innovation as soon as possible post project completion",
+        "Projects where other Innovate UK funding support is available and more appropriate"
+      ],
+      "other_relevant_details": [
+        "The grant is classified as a Subsidy which does not form part of your Minimal Financial Assistance or De Minimis allowance",
+        "The award is subject to the requirements of UK GDPR and the Data Protection Act 2018",
+        "The grant is subject to the Subsidy Control Act 2022 and the State aid rules"
+      ]
+    },
+    "link": "https://apply-for-innovation-funding.service.gov.uk/competition/1982/overview/e5d935d6-0690-4f1d-b442-4fb868be8384",
+    "application_url": null,
+    "created_at": "2024-11-05T10:48:31.016975+00:00",
+    "identifier": "8c11cb3200945bcf3c28047257a384de",
+    "application_content": {
+      "content": {
+        "sections": [
+          {
+            "section": "Project Overview",
+            "questions": [
+              {
+                "text": "Give your project’s title, start date and duration.",
+                "type": "textarea",
+                "mandatory": true,
+                "options": null
+              },
+              {
+                "text": "Describe your project briefly and be clear about what makes it innovative.",
+                "type": "textarea",
+                "mandatory": true,
+                "options": null
+              },
+              {
+                "text": "Describe your project in detail and in a way that you are happy to see published.",
+                "type": "textarea",
+                "mandatory": true,
+                "options": null
+              },
+              {
+                "text": "Describe how your project fits the scope of the competition.",
+                "type": "textarea",
+                "mandatory": true,
+                "options": null
+              }
+            ]
+          },
+          {
+            "section": "Project Team and Partners",
+            "questions": [
+              {
+                "text": "Who is in the project team, why do you have the right skills and experience to succeed, and how will you successfully deliver your project?",
+                "type": "textarea",
+                "mandatory": true,
+                "options": null
+              },
+              {
+                "text": "What is the name and full registered address of your organisation and any partners or subcontractors working on your project?",
+                "type": "textarea",
+                "mandatory": true,
+                "options": null
+              }
+            ]
+          },
+          {
+            "section": "Project Impact and Commercialisation",
+            "questions": [
+              {
+                "text": "What will be the impact of receiving the grant, both for your business and outside your organisation?",
+                "type": "textarea",
+                "mandatory": true,
+                "options": null
+              },
+              {
+                "text": "What is your target market and what is your strategy for securing the market opportunity you have identified, including your route to market and commercialisation of project outputs?",
+                "type": "textarea",
+                "mandatory": true,
+                "options": null
+              }
+            ]
+          },
+          {
+            "section": "Funding and Value for Money",
+            "questions": [
+              {
+                "text": "How will you spend your grant funding and how does this represent good value for money for the taxpayer?",
+                "type": "textarea",
+                "mandatory": true,
+                "options": null
+              }
+            ]
+          },
+          {
+            "section": "Ethics and Animal Testing",
+            "questions": [
+              {
+                "text": "Will your project involve any trials with animals or animal testing?",
+                "type": "select",
+                "mandatory": true,
+                "options": {
+                  "option_1": "Yes",
+                  "option_2": "No"
+                }
+              }
+            ]
+          },
+          {
+            "section": "Licenses and Permits",
+            "questions": [
+              {
+                "text": "Will you have the correct permits and licences in place to carry out your project?",
+                "type": "select",
+                "mandatory": true,
+                "options": {
+                  "option_1": "Yes",
+                  "option_2": "No"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "application_content_url": "https://apply-for-innovation-funding.service.gov.uk/competition/1982/overview/e5d935d6-0690-4f1d-b442-4fb868be8384/#how-to-apply"
+  }

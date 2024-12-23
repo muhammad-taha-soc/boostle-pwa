@@ -1,0 +1,30 @@
+.widget {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 370px;
+  border: 1px solid var(--border-light);
+  background-color: var(--background);
+  border-radius: var(--border-radius-4);
+  overflow: hidden;
+  
+  &--sm {
+    min-height: 120px;
+  }
+
+  &--lg {
+    min-height: 749px;
+  }
+
+  &__header {
+    background-color: var(--background);
+    padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-md);
+  }
+  
+  &__content {
+    padding: var(--spacing-lg);
+    flex: 1;
+    overflow-y: auto;
+    height: calc(100% - 60px);
+  }
+}

@@ -1,0 +1,99 @@
+@import '../../styles/global-variables.scss';
+
+.footer {
+  background-color: var(--background-light);
+
+  &__wrap {
+    padding: var(--spacing-lg) 0 0;
+    text-align: center;
+  }
+
+  &__upper {
+    padding: var(--spacing-xl) 0;
+
+    @media all and (max-width: (900px + $lg)) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    flex: 1;
+    text-align: left;
+
+    @media all and (max-width: (640px + $lg)) {
+      text-align: center;
+    }
+    
+    &:first-child {
+      flex: 2;
+      
+      @media all and (max-width: (900px + $lg)) {
+        flex: 2 1 100%;
+        margin: 0 0 $xl;
+      }
+
+      @media all and (max-width: (640px + $lg)) {
+        text-align: center;
+      }
+
+      p {
+        color: var(--text-colour-light);
+      }
+    }
+
+    &-title {
+      font-weight: 700;
+      color: var(--text-colour);
+      margin: 0 0 $sm;
+    }
+    
+    &-link {
+      text-decoration: none;
+      color: var(--text-colour-light);
+
+      &:not(:last-child) {
+        margin: 0 0 var(--spacing-xs);
+      }
+    }
+  }
+  
+  &__logo-icon {
+    margin: 0 0 $md;
+    
+    @media all and (max-width: (640px + $lg)) {
+      margin: 0 auto var(--spacing-md);
+    }
+  }
+  
+  &__social-links {
+    gap: var(--spacing-sm);
+  }
+
+  &__social-link {
+    color: var(--border-heavy);
+    width: 40px;
+    height: 40px;
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      color: var(--border-active);
+    }
+  }
+
+  &__lower {
+    border-top: 1px solid var(--border-light);
+    color: var(--text-colour-light);
+    padding: $lg 0;
+   
+    opacity: .75;
+
+    @media all and (max-width: (640px + $lg)) {
+      flex-direction: column;
+      gap: $md;
+    }
+  }
+  
+  &__copyright {
+    font-size: 14px;
+  }
+}

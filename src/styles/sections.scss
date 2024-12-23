@@ -1,0 +1,102 @@
+@import './global-variables.scss';
+
+  .b-app {
+    &-public {
+      // width: 100vw;
+     
+      min-height: 100vh;
+
+      &__header {
+       padding: 16px;
+        
+        background-color: var(--background);
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+      }
+      
+      &.with-header {
+      
+        background-color: var(--background);
+        main, .content {
+          min-height: calc(100vh - var(--app-header-height));
+          margin-top: 20px;
+         
+         
+         
+        }
+      }
+      .logo {
+        width: 100px;
+  
+      }
+    }
+
+    &-section {
+      position: relative;
+        width: 100%;
+
+
+    
+      &__content {
+        flex: 1;
+        // overflow: hidden;
+      
+        
+        main, #content {
+         
+          flex-grow: 1;
+          margin :0 32px;
+          
+        }
+      }
+
+      .app-header {
+        padding: $md 0;
+        border-bottom: 1px solid var(--border-light);
+        min-height: 72px;
+        display: flex;
+        align-items: center;
+      }
+
+    .b-sidebar {
+      min-width: var(--app-header-height);
+      border-right: 1px solid var(--border-light);
+  
+      &__menu-items {
+        padding-top: var(--spacing-sm);
+      }
+  
+      &__lower-menu-items {
+        padding-bottom: var(--spacing-sm);
+      }
+  
+      &__menu-item, &__lower-menu-item {
+        width: 72px;
+        height: 72px;
+        // margin-bottom: var(--spacing-sm);
+      }
+      
+      &__menu-link, &__lower-menu-link {
+        display: inline-block;
+        padding: var(--spacing-md);
+        border-radius: var(--border-radius-md);
+        background-color: transparent;
+        transition: background-color var(--transition-time-short) var(--transition-ease);
+        
+        &:hover, &.active {
+          cursor: pointer;
+          background-color: #e9e9e9;
+          
+          svg {
+            color: var(--text-colour);
+          }
+        }
+        
+        svg {
+          display: block;
+          color: var(--disabled-text);
+          transition: color var(--transition-time-short) var(--transition-ease);
+        }
+      }
+    }
+  }
+}

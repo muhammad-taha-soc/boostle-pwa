@@ -1,0 +1,61 @@
+@import '../../styles/global-variables.scss';
+
+.grant-highlight {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background);
+  // margin-bottom: var(--spacing-md);
+  border-radius: var(--border-radius-lg);
+  border: 0;
+  transition: all .3s ease-in-out;
+  min-height: 228px;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  
+  @media all and (min-width: 1440px) {
+    min-height: 228px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+
+    .results & {
+      cursor: default;
+      box-shadow: none;
+    }
+  }
+
+  &__header {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-bottom: 1px solid var(--border-light);
+    
+    @media all and (min-width: 1440px) {
+      padding: var(--spacing-md);
+    }
+  }
+
+  &__information, &__footer {
+    padding: var(--spacing-sm) var(--spacing-md);
+    
+    @media all and (min-width: 1440px) {
+      padding: var(--spacing-md);
+    }
+  }
+
+  &__footer {
+    margin-top: auto;
+    border-top: 1px solid var(--border-light);
+    // background-color: var(--success-bg);
+  }
+
+  &__amount {
+    padding: 0 var(--spacing-xs);
+    color: var(--success);
+  }
+
+  .flag {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    margin-left: var(--spacing-sm);
+  }
+}

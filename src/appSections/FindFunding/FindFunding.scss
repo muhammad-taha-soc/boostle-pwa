@@ -1,0 +1,199 @@
+@import url('../../styles/global-variables.scss');
+
+.get-started {
+  &__wrap {
+    background: transparent;
+    overflow: hidden;
+    width: 100%;
+    transition: width .3s ease-in-out, height .3s ease-in-out;
+
+    &.step-1 {
+    }
+
+    &.step-2 {
+      background: var(--background);
+      background: transparent;
+      box-shadow: none;
+      border-radius: 0;
+
+      .get-started__content {
+        max-width: 1080px;
+        padding: var(--spacing-lg) 0 0;
+                
+        // @media all and (min-width: 1440px) {
+        //   padding: 60px 0 0;
+        // }
+      }
+    }
+  }
+  
+  // &__visual {
+  //   padding: var(--spacing-md);
+  //   width: 40%;
+  //   background: linear-gradient(to right, var(--primary-colour-10), transparent);
+  // }
+  
+  &__form {
+    margin: 0 0 var(--spacing-md);
+
+    p {
+      margin: 0 0 var(--spacing-lg);
+    }
+  }
+
+  &__business {
+    &-summary {     
+      padding-top: var(--spacing-sm);
+
+      &-title {
+        background-color: var(--background);
+        border: 1px solid var(--border-light);
+        padding: var(--spacing-sm) var(--spacing-md);
+        border-radius: var(--border-radius-round);
+
+        &:not(:first-of-type) {
+          margin-left: var(--spacing-sm);
+        }
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  // &__content-loading {
+  //   justify-self: center;
+  // }
+
+  &__content {
+    padding: var(--spacing-lg);
+
+    &.loading {
+      justify-self: center;
+    }
+
+    &-loading {
+      text-align: center;
+      margin: var(--spacing-md) 0 0;
+    }
+    
+    &-title {
+      margin: 0 0 var(--spacing-md);
+
+      span {
+        font-weight: 900;
+        color: var(--success);
+      }
+    }
+    
+    &-description {
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__company-results {
+    width: 100%;
+    padding: var(--spacing-sm) 0;
+    
+    &.multiple {
+      padding: 0 var(--spacing-xs) var(--spacing-md);
+      max-height: calc(100vh - 383px);
+      overflow-y: scroll;
+
+      .get-started__company-result {
+        &:not(:last-of-type) {
+          margin-bottom: var(--spacing-sm);
+        }
+      }
+    }
+  }
+
+  &__company-result-empty {
+    padding: 15px var(--spacing-sm);
+    font-weight: bold;
+    color: var(--error);
+  }
+
+  &__company-result {
+    background: var(--background);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-md);
+    font-weight: bold;
+    color: var(--text-colour);
+    border: 1px solid var(--border-light);
+    transition: border var(--transition-time-short) var(--transition-ease);
+    
+    &:hover {
+      cursor: pointer;
+      border: 1px solid var(--border-active);
+    }
+
+    p {
+      width: calc(100% - 200px);
+    }
+  }
+
+  &__results-summary {
+    width: 100%;
+    // background: var(--background);
+    // border: 1px solid var(--border-light);
+    // border-radius: var(--border-radius-lg);
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-lg);
+  }
+
+  &__results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(228px, auto);
+    gap: var(--spacing-md);
+    
+    &.one {
+      grid-template-columns: repeat(1, 1fr); 
+    }
+    
+    &.two {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    @media all and (min-width: 1440px) {
+      grid-auto-rows: minmax(228px, auto);
+    }
+  }
+
+  &__submit {
+    margin-left: var(--spacing-sm);
+  }
+
+  &__sign-up {
+    height: 32vh;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: var(--box-shadow);
+    border-top: 1px solid var(--border-light);
+    background: var(--background);
+    // background: linear-gradient(to top, var(--background) 85%, transparent 100%);
+
+    &-content {
+      padding: var(--spacing-lg) 0;
+      
+      // @media all and (min-width: 1440px) {
+      //   padding: var(--spacing-xxl) 0 var(--spacing-xl);
+      // }
+
+      p {
+        text-align: center;
+
+        &:first-of-type {
+          margin: 0 0 var(--spacing-sm);
+        }
+      }
+    }
+  }
+}

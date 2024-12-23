@@ -1,0 +1,63 @@
+@keyframes spinner_border { 
+  100% {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes fade_scroll {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  
+  50% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideUp {
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+  100% {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    transform-origin: center center;
+  }
+  100% {
+    transform: scale(1.05);
+    transform-origin: center center;
+  }
+}
+
+@keyframes skeleton {
+  0% {
+    opacity: .2;
+  }
+  100% {
+    opacity: .4;
+  }
+}

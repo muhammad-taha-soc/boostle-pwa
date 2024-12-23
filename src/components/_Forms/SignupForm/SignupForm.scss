@@ -1,0 +1,61 @@
+@import '../../../styles/global-variables.scss';
+
+.signup-form {
+  &__title {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  &__email,
+  &__password {
+    &.input-error {
+      .invalid-feedback {
+        display: block;
+      }
+    }
+  }
+
+  &__email {
+    margin: 0 0 var(--spacing-lg);
+  }
+
+  &__password {
+    margin: 0 0 var(--spacing-md);
+    .login-form__password-wrap {
+      position: relative;
+    }
+
+    .login-form__show-password {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      border: 0;
+      outline: 0;
+      background: none;
+    }
+  }
+
+  &__forgot-password {
+    font-size: 0.79rem;
+    color: var(--text-colour-light);
+    text-decoration: underline;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 var(--spacing-md);
+    transition: color 0.3s ease;
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--text-colour);
+    }
+  }
+
+  &__footer {
+    margin: var(--spacing-lg) 0 0;
+  }
+
+  &__button {
+    margin-bottom: var(--spacing-sm);
+  }
+}

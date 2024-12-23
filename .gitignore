@@ -1,0 +1,70 @@
+node_modules/
+.DS_Store
+.env.test
+.vscode/
+.prettiercache
+.eslintcache
+.husky/
+aws-exports.js
+awsconfiguration.json
+amplify/
+
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+
+# disabled temporarily to allow commiting build to speed up codebuild
+#build/
+
+# Optional npm cache directory
+.npm
+
+#Build
+build/static
+build/*
+public/index-local.html
+public/css/main.css
+public/dist/*
+basic.html
+.nyc_output/*
+server/views/layouts/basic.html
+
+# API keys and secrets
+.env
+public/env.js
+
+# Dependency directory
+node_modules
+bower_components
+
+# Editors
+.idea
+.vscode
+*.iml
+modules.xml
+*.ipr
+
+
+# OS metadata
+.DS_Store
+Thumbs.db
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+coverage
+
+# built expressjs
+dist/
+.history
+.tmp
+
+**/storages/tmp/

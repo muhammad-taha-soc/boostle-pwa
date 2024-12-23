@@ -1,0 +1,83 @@
+.material-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+
+  .start-icon {
+    display: flex; /* Use flex to align icon */
+    align-items: center; /* Center icon vertically */
+    margin-right: 8px; /* Space between icon and text */ /* Ensure icon takes full height of button */
+  }
+  &.small {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+
+  &.medium {
+    margin-top: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  &.large {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+
+  // Variant: Contained
+  &.contained {
+    background-color: #8F87DF;
+    color: white;
+   
+
+    &:hover {
+      background-color: #303f9f;
+    }
+
+    &:disabled {
+      background-color: #b0bec5;
+      cursor: not-allowed;
+    }
+  }
+
+  // Variant: Outlined
+  &.outlined {
+    background-color: transparent;
+    border: 1px solid #3f51b5;
+    color: #3f51b5;
+  
+
+    &:hover {
+      background-color: rgba(63, 81, 181, 0.1);
+    }
+
+    &:disabled {
+      border-color: #b0bec5;
+      color: #b0bec5;
+      cursor: not-allowed;
+    }
+  }
+
+  // Variant: Text
+  &.text {
+    background-color: transparent;
+    color: #3f51b5;
+    border: none;
+
+    &:hover {
+      background-color: rgba(63, 81, 181, 0.1);
+    }
+
+    &:disabled {
+      color: #b0bec5;
+      cursor: not-allowed;
+    }
+  }
+}

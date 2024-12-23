@@ -1,0 +1,28 @@
+Copyright © 2023, Boostle
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are prohibited without prior written permission from the author.
+
+This software is confidential and proprietary information of the author. Access to and use of this software is restricted to authorized personnel only.
+
+Any unauthorized use of this software is strictly prohibited.
+
+SOFTWARE PROPRIETARY LICENSE AGREEMENT
+
+By accessing, using, downloading, or copying any part of this software, you are agreeing to be bound by the terms of this license. If you do not agree to these terms, do not use, download, or copy the software.
+
+1. **Restrictions**:
+   - You shall not sublicense, sell, lease, or otherwise transfer the software without the prior written consent of Boostle.
+   - You shall not modify, adapt, or translate the software, or decompile, reverse engineer, disassemble, or otherwise attempt to derive the source code of the software.
+   - You shall not use this software for any purpose that is illegal or prohibited by this agreement.
+
+2. **Termination**: Your license to use the software will terminate immediately if you violate any provision of this agreement. Upon termination, you must destroy all copies of the software.
+
+3. **Limitation of Liability & Warranties**:
+   - THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+   - IN NO EVENT SHALL Boostle BE LIABLE FOR ANY DAMAGES WHATSOEVER ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE.
+
+4. **Jurisdiction & Dispute Resolution**: This license shall be governed by and construed in accordance with the laws of of the United Kingdom. Any disputes arising out of or in connection with this license shall be subject to the exclusive jurisdiction of the courts of the United Kingdom.
+The terms of this license will be enforced to the fullest extent permissible under the laws and treaties of other jurisdictions, and the licensor reserves the right to seek legal remedy in the jurisdiction most favorable to enforcing the terms of this license.
+
+If you have questions about this license, please contact legal@boostle.io.

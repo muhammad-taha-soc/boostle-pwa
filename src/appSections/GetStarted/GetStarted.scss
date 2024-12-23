@@ -1,0 +1,382 @@
+@import '../../styles//global-variables.scss';
+
+.get-started {
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+   // This ensures the parent container takes the full viewport height
+    transition: transform 0.5s ease-in-out;
+
+
+  }
+
+  &__content {
+    display: flex; // Use flex to center content inside
+    justify-content: center; // Center horizontally
+    align-items: center; // Center vertically
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+ // Ensure it takes the full width of its container
+
+    @media (max-width: 768px) {
+      padding: 20px; // Adjust padding for smaller screens
+    }
+  }
+
+
+  &__company-results {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: opacity 0.5s ease-out;
+
+    .loading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px; // Adjust based on design needs
+    }
+
+    .company-list {
+      max-height: 400px;
+      overflow-y: auto;
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .company-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .get-started__company-result {
+      background: var(--background);
+      border-radius: 10px;
+      padding: 15px;
+      font-weight: bold;
+      color: var(--text-colour);
+      border: 1px solid var(--border-light);
+      transition: border var(--transition-time-short) var(--transition-ease);
+
+      &:hover {
+        cursor: pointer;
+        border: 1px solid var(--border-active);
+      }
+    }
+  }
+
+
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    @media (max-width: 768px) {
+      grid-column: 1;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px 25px;
+      font-size: 1rem;
+      background-color: #6750A4;
+      border-radius: 30px;
+    }
+  }
+
+  .single-company-confirmation {
+    font-weight: bold;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+}
+.back-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #6750A4;
+  margin-bottom: 10px;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+
+
+
+//   &__results-summary {
+//     width: 100%;
+//     // background: var(--background);
+//     // border: 1px solid var(--border-light);
+//     // border-radius: var(--border-radius-lg);
+//     margin-bottom: var(--spacing-lg);
+//     padding: var(--spacing-lg);
+//   }
+
+//   &__results {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-auto-rows: minmax(228px, auto);
+//     gap: var(--spacing-md);
+    
+//     &.one {
+//       grid-template-columns: repeat(1, 1fr); 
+//     }
+    
+//     &.two {
+//       grid-template-columns: repeat(2, 1fr); 
+//     }
+    
+//     @media all and (min-width: 1440px) {
+//       grid-auto-rows: minmax(228px, auto);
+//     }
+//   }
+
+//   &__submit {
+//     margin-left: var(--spacing-sm);
+//   }
+
+//   &__sign-up {
+//     height: 32vh;
+//     position: fixed;
+//     z-index: 10;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     box-shadow: var(--box-shadow);
+//     border-top: 1px solid var(--border-light);
+//     background: var(--background);
+//     // background: linear-gradient(to top, var(--background) 85%, transparent 100%);
+
+//     &-content {
+//       padding: var(--spacing-lg) 0;
+      
+//       // @media all and (min-width: 1440px) {
+//       //   padding: var(--spacing-xxl) 0 var(--spacing-xl);
+//       // }
+
+//       p {
+//         text-align: center;
+
+//         &:first-of-type {
+//           margin: 0 0 var(--spacing-sm);
+//         }
+//       }
+//     }
+//   }
+//  }
+// Import your global variables
+// Import your global variables
+// @import url('../../styles/global-variables.scss');
+
+// .step-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   background-color: #f9f9f9;
+// }
+
+// .step-box {
+//   background-color: #fff;
+//   padding: 40px;
+//   border-radius: 15px;
+//   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+//   max-width: 480px;
+//   width: 100%;
+//   text-align: center;
+// }
+
+// .step-logo {
+//   width: 60px;
+//   margin-bottom: 20px;
+// }
+
+// .step-title {
+//   font-weight: 700;
+//   font-size: 1.25rem;
+//   margin-bottom: 10px;
+// }
+
+// .step-description {
+//   font-size: 0.875rem;
+//   color: #666;
+//   margin-bottom: 30px;
+// }
+
+// .input-field {
+//   position: relative;
+//   margin-bottom: 30px;
+// }
+
+// .input-field input {
+//   width: 100%;
+//   padding: 15px;
+//   border: 1px solid #ccc;
+//   border-radius: 10px;
+//   font-size: 1rem;
+// }
+
+// .input-clear {
+//   position: absolute;
+//   top: 50%;
+//   right: 15px;
+//   transform: translateY(-50%);
+//   cursor: pointer;
+//   font-size: 1.25rem;
+//   color: #ccc;
+// }
+
+// .input-clear:hover {
+//   color: #000;
+// }
+
+// .company-results {
+//   margin: 20px 0;
+// }
+
+// .results-header {
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 10px;
+// }
+
+// .results-count {
+//   font-weight: bold;
+// }
+
+// .single-company-confirmation {
+//   font-weight: bold;
+// }
+
+// .company-result {
+//   padding: 10px;
+//   margin-bottom: 10px;
+//   background-color: #f9f9f9;
+//   border-radius: 10px;
+//   cursor: pointer;
+//   transition: background-color 0.3s ease;
+// }
+
+// .company-result:hover {
+//   background-color: #e9e9e9;
+// }
+
+// .company-name {
+//   font-weight: bold;
+// }
+
+.company-result-empty {
+  color: #d9534f;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+// .step-loading-message {
+//   font-size: 1rem;
+//   color: #666;
+//   margin-top: 20px;
+// }
+
+// .button-group {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .cancel-button {
+//   border: 2px solid #8f87df;
+//   border-radius: 30px;
+//   color: #8f87df;
+//   padding: 10px 25px;
+//   background-color: #fff;
+//   font-size: 1rem;
+//   transition: background-color 0.3s ease;
+// }
+
+// .cancel-button:hover {
+//   background-color: #f1f1f1;
+// }
+
+// .next-step-button {
+//   background-color: #8f87df;
+//   color: #fff;
+//   border-radius: 30px;
+//   padding: 10px 25px;
+//   font-size: 1rem;
+//   border: none;
+//   transition: background-color 0.3s ease;
+// }
+
+// .next-step-button:hover {
+//   background-color: #7b75ce;
+// }
+
+// .next-step-button:disabled {
+//   background-color: #d3d3d3;
+//   cursor: not-allowed;
+// }
+// Parent container to center the box
+// .center-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   background-color: #f9f9f9; /* Light background */
+// }
+
+// .step-box {
+//   background-color: #fff;
+//   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+//   padding: 40px;
+//   border-radius: 15px;
+//   max-width: 480px;
+//   width: 100%;
+//   text-align: center;
+// }
+
+// .step-title {
+//   font-weight: 700;
+//   font-size: 1.25rem;
+//   margin-bottom: 10px;
+// }
+
+// .step-description {
+//   font-size: 0.875rem;
+//   color: #666;
+//   margin-bottom: 30px;
+// }
+
+// .single-company-confirmation {
+//   font-weight: bold;
+//   margin-bottom: 20px;
+// }
+
+// .next-step-button {
+//   background-color: #8f87df;
+//   color: #fff;
+//   border-radius: 30px;
+//   padding: 10px 25px;
+//   font-size: 1rem;
+//   border: none;
+//   transition: background-color 0.3s ease;
+
+//   &:hover {
+//     background-color: #7b75ce;
+//   }
+// }

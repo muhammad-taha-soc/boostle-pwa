@@ -1,0 +1,17 @@
+
+  #include test folder for linting later
+  test/**/*.test.js
+  dist/**/*.js
+  public/**/*.js
+  views/**/*.js
+  tasks/**/*.js
+  node_modules/**/*.js
+  jsLib/**/*.js
+  coverage/**/*.js
+  .tmp/**/*.js
+  .vscode/**/*.js
+  .nyc_output/**/*.js
+  build/
+  dist/
+  *.min.js
+

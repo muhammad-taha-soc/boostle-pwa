@@ -1,0 +1,105 @@
+@import '../../styles/global-variables.scss';
+
+.application-item {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background);
+  margin: 0 0 var(--spacing-md);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--border-light);
+  transition: all var(--transition-time-short) var(--transition-ease);
+  overflow: hidden;
+
+  &.loading {
+    min-height: 160px;
+    background-color: var(--border-light);
+    animation: skeleton infinite 1.3s;
+
+    &__top-line, &__bottom-line {
+      opacity: 0;
+    }
+  }
+  
+  &:hover {
+    cursor: pointer;
+    border-color: var(--border-active);
+    // box-shadow: var(--box-shadow);
+    
+    .application-item__view {
+      color: var(--border-active);
+    }
+
+    .results & {
+      cursor: default;
+      box-shadow: none;
+    }
+  }
+
+  
+  &__top-line, &__bottom-line {
+    opacity: 1;
+    transition: opacity var(--transition-time-short) var(--transition-ease);
+  }
+
+  &__top-line {
+    padding: var(--spacing-md);
+    gap: var(--spacing-md);
+  }
+
+  &__bottom-line {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-top: 1px solid var(--border-light);
+  }
+
+  &__application-summary {
+    width: calc(100% - 120px);
+    max-width: 480px;
+
+    .application-item__name {
+      font-weight: 800;
+    }
+  }
+
+  &__view {
+    font-size: 0.889rem;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+
+    svg {
+      width: 12px;
+      height: 12px;
+      margin-left: var(--spacing-xs);
+    }
+  }
+
+  &__status {
+    font-size: 0.79rem;
+
+    &-tag {
+      padding: var(--spacing-xs) var(--spacing-sm);
+      // border: 1px solid var(--error);
+      border-radius: var(--border-radius-md);
+      font-weight: 600;
+      
+      &.applied {
+        background-color: var(--success-bg);
+        color: var(--success);
+      }
+      
+      &.to-apply {
+        background-color: #FDF6EA;
+        color: #EDA12E;
+      }
+    }
+  }
+
+  // &__amount {
+  //   padding: 0 var(--spacing-xs) 0 0;
+  //   color: var(--success);
+  // }
+
+  // .flag {
+  //   border-radius: var(--border-radius);
+  //   overflow: hidden;
+  //   margin-right: var(--spacing-sm);
+  // }
+}

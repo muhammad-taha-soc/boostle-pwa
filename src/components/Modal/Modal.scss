@@ -1,0 +1,59 @@
+@import url('../../styles/animations.scss');
+@import url('../../styles/global-variables.scss');
+
+.b-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--modal-background);
+  z-index: -1;
+  backdrop-filter: blur(12px);
+  animation: fadeIn var(--transition-time-short) var(--transition-ease);
+  
+  &.visible {
+    z-index: 999;
+    pointer-events: auto;
+    overflow: visible !important;
+
+    .b-modal__wrap {
+      opacity: 1;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(1);
+      transition-delay: var(--transition-time-short);
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: var(--background);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-md);
+    animation: modalSlideUp var(--transition-time-short) var(--transition-ease);
+
+
+    &.sm {
+      max-width: calc(100vw - 60%);
+      height: calc(100vh - 50%);
+    }
+
+    &.md {
+      max-width: calc(100vw - 40%);
+      height: calc(100vh - 30%);
+    }
+
+    &.lg {
+      max-width: calc(100vw - 20%);
+      height: calc(100vh - 20%);
+    }
+  }
+  
+  &__content {
+    height: calc(100% - 44px);
+    padding: 0 var(--spacing-lg) var(--spacing-lg);
+    overflow-y: scroll;
+  }
+}

@@ -1,0 +1,223 @@
+.b-app-header {
+  min-height: var(--app-header-height);
+
+/* Adjust height as needed *//* Make sure the header is on top of the sidebar */
+
+
+ 
+  // border-bottom: 1px solid var(--border-light);
+  
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border-right: 1px solid var(--border-light);
+    padding: var(--spacing-sm);
+    width: 80px;
+    height: var(--app-header-height);
+    
+    &-wrap {
+      // background-color: var(--text-colour);
+      // width: var(--spacing-lg);
+      // height: var(--spacing-lg);
+      border-radius: var(--border-radius-round);
+    }
+  }
+  
+  &__company-level {
+    flex: 1;
+    padding: 0 var(--spacing-lg);
+  }
+
+  &__main-actions {
+    position: relative;
+    // border-left: 1px solid var(--border-light);
+    padding: 0 var(--spacing-md) 0 0;
+  }
+  
+  &__main-action {
+    width: 72px;
+    height: 72px;
+  }
+
+  &__main-action-link {
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    background-color: transparent;
+    transition: background-color var(--transition-time-short) var(--transition-ease);
+    
+    &:hover, &.active {
+      cursor: pointer;
+      background-color: #e9e9e9;
+      
+      svg {
+        color: var(--text-colour);
+      }
+    }
+    
+    svg {
+      display: block;
+      color: var(--disabled-text);
+      transition: color var(--transition-time-short) var(--transition-ease);
+    }
+  }
+
+  &__user-menu {
+    background: var(--background);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+    width: 200px;
+    position: absolute;
+    top: 150%;
+    right: var(--spacing-md);
+    z-index: 99;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-time-short) var(--transition-ease), top var(--transition-time-short) var(--transition-ease), visibility var(--transition-time-short) var(--transition-ease);
+
+    &.open {
+      top: 100%;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+
+  &__profile-item {
+    flex: 1;
+
+    &:last-of-type {
+      .icon {
+        background-color: var(--error);
+      }
+
+      .b-app-header__profile-link {
+        color: var(--error);
+
+        &:hover {
+          background-color: var(--error-bg);
+          color: var(--error);
+          
+          svg {
+            color: var(--error);
+          }
+        }
+      }
+    }
+  }
+
+  &__profile-link {
+    flex: 1;
+    padding: 15px var(--spacing-md);
+    text-decoration: none;
+    color: var(--text-colour-light);
+    font-size: 0.889rem;
+    transition: color var(--transition-time-short) var(--transition-ease), background-color var(--transition-time-short) var(--transition-ease);
+
+    svg {
+      margin-right: var(--spacing-md);
+    }
+
+    &:hover {
+      background-color: var(--border-light);
+      color: var(--text-colour);
+      
+      svg {
+        color: var(--text-colour);
+      }
+    }
+  }
+}
+.notification-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 320px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+
+  &__header {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    h4 {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  &__item {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    align-items: flex-start;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .icon {
+      margin-right: 10px;
+      font-size: 20px; /* Icon font size */
+    }
+
+    &__text {
+      strong {
+        font-weight: 600;
+        font-size: 0.9rem;
+        display: block;
+      }
+
+      p {
+        margin: 0;
+        font-size: 0.8rem;
+        color: #666;
+      }
+    }
+  }
+
+  &__footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+
+    a {
+      text-decoration: none;
+      color: #8f87df;
+      font-weight: bold;
+    }
+  }
+}
+
+.b-app-header__main-action {
+  position: relative; /* To ensure notifications are positioned relative to the icon */
+}
+
+.b-app-header__main-action-link {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+}
+
+.b-app-header__user-wallet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

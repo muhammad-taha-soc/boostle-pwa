@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.15 98.04">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f0c910;
+      }
+    </style>
+  </defs>
+  <g id="Layer_4" data-name="Layer 4">
+    <g id="Boostle_Icon_-_Black" data-name="Boostle Icon - Black">
+      <g id="Icon">
+        <path class="cls-1" d="m29.65,68.06l-9.6,28.29C5.41,91.61-2.59,77.39.76,60.53L11.94,2.52,35.22,0l-7.06,36.7c4.15-2.66,8.8-3.99,13.84-3.99,1.88,0,3.71.19,5.48.58l-30,35.54,12.18-.78Z"/>
+        <path class="cls-1" d="m69.15,62.25c0,20.12-16.08,35.79-37.92,35.79-3.18,0-6.17-.36-8.97-1.08l28.26-38.17-12.07.8,11.13-25.74c11.4,3.43,19.57,14.56,19.57,28.4Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

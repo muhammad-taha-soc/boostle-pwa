@@ -1,0 +1,276 @@
+{
+    "application_url": "https://www.foundationscotland.org.uk/sites/default/files/2024-02/Organisation%20Application%20Form%20Questions_1.pdf",
+    "application_content": {
+        "content": {
+            "sections": [
+                {
+                    "questions": [
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Organisation Name",
+                            "type": "text",
+                            "answer":"Ailsa Technologies Limiteds"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Date Established",
+                            "type": "date",
+                            "answer":"2024-01-01"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Address",
+                            "type": "text",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Organisation Type",
+                            "type": "select",
+                            "answer":"Charity"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Management committee numbers and signatory eligibility declaration",
+                            "type": "text",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Number of full and part-time staff, volunteers and members",
+                            "type": "number",
+                            "answer":"123"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Briefly describe the purpose of your organisation, outlining the main activities and services you provide",
+                            "type": "textarea",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Please describe who benefits from the work of your organisation (i.e. members or service users) and on average how many people you work with per week, month or year",
+                            "type": "textarea",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        }
+                    ],
+                    "section": "Organisation Details"
+                },
+                {
+                    "questions": [
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Name, job title if applicable, address, contact details for the main contact (usually the applicant applying)",
+                            "type": "text",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        }
+                    ],
+                    "section": "Main Contact"
+                },
+                {
+                    "questions": [
+                        {
+                            "mandatory": false,
+                            "options": null,
+                            "text": "Details of your whole Management Committee must be entered. This includes name, date of birth, address and experience",
+                            "type": "text",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        },
+                        {
+                            "mandatory": false,
+                            "options": null,
+                            "text": "We require the names of the three principal members, in most cases this will be the Chair, Secretary and Treasurer and so are labelled as such on the form but please don’t worry if you",
+                            "type": "text",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        }
+                    ],
+                    "section": "Management Committee Details"
+                },
+                {
+                    "questions": [
+                        {
+                            "mandatory": false,
+                            "options": null,
+                            "text": "Name and contact details for a referee",
+                            "type": "text",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        }
+                    ],
+                    "section": "Referee"
+                },
+                {
+                    "questions": [
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "What was your total income over the last accounting year?",
+                            "type": "number",
+                            "answer":"123"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "What are your current unrestricted reserves?",
+                            "type": "number",
+                            "answer":"123"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Why can these unrestricted reserves not be used for this project?",
+                            "type": "textarea",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        }
+                    ],
+                    "section": "Financial Details"
+                },
+                {
+                    "questions": [
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Account number, sort code and bank account name must be supplied, and a current statement uploaded",
+                            "type": "text",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        }
+                    ],
+                    "section": "Bank Details"
+                },
+                {
+                    "questions": [
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Project Name",
+                            "type": "text",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Please provide a brief description of the project you are applying for, including details of how it will be run",
+                            "type": "textarea",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Project / Funding Start Date",
+                            "type": "date",
+                            "answer":"2024-01-01"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "In which area(s) will the project take place?",
+                            "type": "text",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "Please provide a postcode which represents the geographical area you will benefit",
+                            "type": "text",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "What consultation have you done to ensure this project will meet the needs and interests of those involved?",
+                            "type": "textarea",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "What difference will your project make to the people involved and the wider community?",
+                            "type": "textarea",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "How will the people you want to benefit from the proposed project find out about it?",
+                            "type": "textarea",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "What measures have you taken to maximise the positive environmental impacts and minimise any negative environmental impacts from your project?",
+                            "type": "textarea",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "How will the project continue beyond the life of the grant?",
+                            "type": "textarea",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        }
+                    ],
+                    "section": "Project Details"
+                },
+                {
+                    "questions": [
+                        {
+                            "mandatory": false,
+                            "options": null,
+                            "text": "There may be a couple of additional questions specific to the fund you are applying to",
+                            "type": "text",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        }
+                    ],
+                    "section": "Additional Questions"
+                },
+                {
+                    "questions": [
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "What is the total cost of the project?",
+                            "type": "number",
+                            "answer":"123"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "How much money are you applying to us for?",
+                            "type": "number",
+                            "answer":"123"
+                        },
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "How much has been raised so far?",
+                            "type": "number",
+                            "answer":"123"
+                        }
+                    ],
+                    "section": "Budget"
+                },
+                {
+                    "questions": [
+                        {
+                            "mandatory": true,
+                            "options": null,
+                            "text": "You will be seeing a list of possible outcomes for your project and be asked to identify which you think are most suitable for your project",
+                            "type": "text",
+                            "answer":"123 Main St, Edinburgh, EH1 1AA"
+                        }
+                    ],
+                    "section": "Indicators and Beneficiaries"
+                }
+            ]
+        }
+    }
+}

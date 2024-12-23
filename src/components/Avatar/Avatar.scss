@@ -1,0 +1,17 @@
+@import '../../styles/global-variables.scss';
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: 2px solid var(--primary-colour);
+  border-radius: var(--border-radius-round);
+  color: var(--primary-colour);
+  font-size: 0.79rem;
+  font-weight: bold;
+  
+  &.avatar--lg {
+    width: var(--spacing-lg);
+    height: var(--spacing-lg);
+  }
+}

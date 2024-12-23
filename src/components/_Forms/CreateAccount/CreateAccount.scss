@@ -1,0 +1,45 @@
+@import '../../../styles/global-variables.scss';
+
+.create-account-form {
+  &__email,
+  &__password {
+    &.input-error {
+      .invalid-feedback {
+        display: block;
+      }
+    }
+  }
+
+  &__email {
+    margin: 0 0 var(--spacing-lg);
+  }
+
+  &__password {
+    margin: 0 0 var(--spacing-md);
+    .create-account-form__password-wrap {
+      position: relative;
+    }
+
+    .create-account-form__show-password {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      border: 0;
+      outline: 0;
+      background: none;
+    }
+  }
+
+  &__footer {
+    text-align: center;
+  }
+
+  &__button {
+    margin: var(--spacing-sm) 0 0;
+  }
+
+  &__disclaimer {
+    margin: var(--spacing-sm) 0 0;
+  }
+}
